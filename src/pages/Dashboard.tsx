@@ -86,9 +86,9 @@ const Dashboard: React.FC = () => {
               <FolderPlus className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold">Study Dashboard</h1>
+              <h1 className="text-3xl font-bold">Project Dashboard</h1>
               <p className="text-muted-foreground">
-                Organize your study materials with folders and notes
+                Organize your web development projects and code snippets
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ const Dashboard: React.FC = () => {
 
       <div className="space-y-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold">My Folders</h2>
+          <h2 className="text-xl font-semibold">My Projects</h2>
 
           <div className="flex items-center gap-2">
             <div className="flex items-center border rounded-lg p-1">
@@ -125,7 +125,7 @@ const Dashboard: React.FC = () => {
 
             <Button onClick={() => setShowCreateDialog(true)}>
               <Plus className="h-4 w-4 mr-2" />
-              New Folder
+              New Project
             </Button>
           </div>
         </div>
@@ -134,14 +134,13 @@ const Dashboard: React.FC = () => {
           <Card className="text-center py-12">
             <CardContent>
               <FolderPlus className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">No folders yet</h3>
+              <h3 className="text-lg font-semibold mb-2">No projects yet</h3>
               <p className="text-muted-foreground mb-4">
-                Create your first folder to start organizing your study
-                materials
+                Create your first project folder to start organizing your development work
               </p>
               <Button onClick={() => setShowCreateDialog(true)}>
                 <Plus className="h-4 w-4 mr-2" />
-                Create First Folder
+                Create First Project
               </Button>
             </CardContent>
           </Card>

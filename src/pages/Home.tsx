@@ -15,73 +15,68 @@ import { Input } from "@/components/ui/input";
 const searchableItems = [
   {
     path: "/dashboard",
-    name: "Dashboard",
-    description: "Organize your study materials",
+    name: "Project Dashboard",
+    description: "Organize your web development projects",
   },
   {
     path: "/grade-boundary",
-    name: "Grade Boundary",
-    description: "Calculate grades and UMS",
+    name: "Performance Analytics",
+    description: "Analyze website performance and optimization",
   },
   {
     path: "/past-papers",
-    name: "Past Papers",
-    description: "Access exam papers and solutions",
+    name: "Code Challenges",
+    description: "Coding exercises and programming challenges",
   },
   {
     path: "/mcq-solver",
-    name: "MCQ Solver",
-    description: "AI-powered multiple choice help",
+    name: "AI Code Helper",
+    description: "AI-powered coding assistance and suggestions",
   },
   {
     path: "/written-solver",
-    name: "Written Solver",
-    description: "Get help with written questions",
+    name: "Debug Assistant", 
+    description: "Get help debugging and fixing your code",
   },
   {
     path: "/topical",
-    name: "Topical Questions",
-    description: "Topic-wise question practice",
+    name: "Technology Tutorials",
+    description: "Learn specific web development technologies",
   },
   {
     path: "/quiz-generator",
-    name: "Quiz Generator",
-    description: "Create custom quizzes and tests",
+    name: "Code Quiz Generator",
+    description: "Create interactive coding quizzes and tests",
   },
   {
     path: "/notes",
-    name: "Notes",
-    description: "Create and manage study notes",
+    name: "Development Notes",
+    description: "Create and manage coding documentation",
   },
   {
     path: "/flashcards",
-    name: "Flashcards",
-    description: "Interactive flashcard system",
+    name: "Tech Flashcards",
+    description: "Master web dev concepts with flashcards",
   },
   {
     path: "/planner",
-    name: "Planner",
-    description: "Plan studies and time exams",
+    name: "Project Planner",
+    description: "Plan development projects and deadlines",
   },
   {
     path: "/syllabus",
-    name: "Syllabus Checklist",
-    description: "Track syllabus progress",
+    name: "Learning Path Tracker",
+    description: "Track your web development learning progress",
   },
   {
     path: "/vault",
-    name: "Resource Vault",
-    description: "Download PDFs, notes and links",
+    name: "Resource Library",
+    description: "Web dev resources, tools, and documentation",
   },
   {
     path: "/whatsapp-community",
-    name: "WhatsApp Community",
-    description: "Join our study community",
-  },
-  {
-    path: "/mind-maps",
-    name: "Mind Maps",
-    description: "Create interactive mind maps",
+    name: "Developer Community",
+    description: "Join our web development community",
   },
 ];
 
@@ -116,13 +111,13 @@ const HomePage: React.FC = () => {
       <section className="py-20 px-6">
         <div className="container mx-auto text-center space-y-8 animate-fade-in">
           <div className="w-20 h-20 bg-primary rounded-2xl hover:rounded-[50%] transition-all flex items-center justify-center mx-auto shadow-medium">
-            <Dna className="h-10 w-10 text-primary-foreground" />
+            <span className="text-3xl">🦆</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold">IAL Biology U4</h1>
+          <h1 className="text-5xl md:text-6xl font-bold">Quackly</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Master Edexcel IAL Biology Unit 4 with comprehensive study tools and
-            resources designed for success
+            Your ultimate web development toolkit - from coding challenges to performance optimization, 
+            everything you need to build amazing web experiences
           </p>
           {/* Search Bar */}
           <div className="relative max-w-md mx-auto mb-8">
@@ -130,7 +125,7 @@ const HomePage: React.FC = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input
                 type="text"
-                placeholder="Search for tools..."
+                placeholder="Search for dev tools..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={handleSearchFocus}
@@ -162,7 +157,7 @@ const HomePage: React.FC = () => {
                   ))
                 ) : (
                   <div className="px-4 py-3 text-muted-foreground text-center">
-                    No tools found for "{searchQuery}"
+                    No dev tools found for "{searchQuery}"
                   </div>
                 )}
               </div>
@@ -183,7 +178,7 @@ const HomePage: React.FC = () => {
       {/* Navigation Cards */}
       <section>
         <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 sm:mb-8">
-          Study Tools
+          Developer Tools
         </h2>
         <NavigationCards />
       </section>

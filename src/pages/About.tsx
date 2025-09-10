@@ -32,69 +32,69 @@ const About: React.FC = () => {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
   const gradeCalculator = {
-    "A*": { min: 80, color: "bg-green-500" },
-    A: { min: 70, color: "bg-blue-500" },
-    B: { min: 60, color: "bg-purple-500" },
-    C: { min: 50, color: "bg-orange-500" },
-    D: { min: 40, color: "bg-yellow-500" },
+    "Expert": { min: 90, color: "bg-green-500" },
+    "Advanced": { min: 75, color: "bg-blue-500" },
+    "Intermediate": { min: 60, color: "bg-purple-500" },
+    "Beginner": { min: 40, color: "bg-orange-500" },
+    "Novice": { min: 20, color: "bg-yellow-500" },
   };
 
   const quickLinks = [
     {
-      name: "Dashboard",
+      name: "Project Dashboard",
       path: "/dashboard",
       icon: BookOpen,
       color: "text-blue-500",
     },
     {
-      name: "Past Papers",
+      name: "Code Challenges",
       path: "/past-papers",
       icon: Trophy,
       color: "text-green-500",
     },
-    { name: "Notes", path: "/notes", icon: Star, color: "text-yellow-500" },
+    { name: "Dev Notes", path: "/notes", icon: Star, color: "text-yellow-500" },
     {
-      name: "Flashcards",
+      name: "Tech Flashcards",
       path: "/flashcards",
       icon: Brain,
       color: "text-purple-500",
     },
     {
-      name: "Quiz Generator",
+      name: "Code Quiz Generator",
       path: "/quiz-generator",
       icon: Zap,
       color: "text-red-500",
     },
-    { name: "Planner", path: "/planner", icon: Target, color: "text-cyan-500" },
+    { name: "Project Planner", path: "/planner", icon: Target, color: "text-cyan-500" },
   ];
 
   const features = [
     {
       icon: BookOpen,
-      title: "Comprehensive Notes",
-      description: "Interactive study notes with embedded quizzes and keywords",
+      title: "Interactive Tutorials",
+      description: "Learn web development with hands-on coding exercises and real projects",
       color:
         "bg-blue-50 text-blue-600 dark:bg-blue-600/20 dark:text-blue-50 dark:border-blue-200/40 border-blue-200",
     },
     {
       icon: Trophy,
-      title: "Past Papers Library",
+      title: "Code Challenge Library",
       description:
-        "Extensive collection of past papers with AI-powered solutions",
+        "Practice with hundreds of coding challenges from beginner to advanced",
       color:
         "bg-green-50 text-green-600 dark:bg-green-600/20 dark:text-green-50 dark:border-green-200/40 border-green-200",
     },
     {
       icon: Brain,
-      title: "Smart Flashcards",
-      description: "Adaptive flashcard system with spaced repetition",
+      title: "Smart Learning Tools",
+      description: "AI-powered code assistance and personalized learning paths",
       color:
         "bg-purple-50 text-purple-600 dark:bg-purple-600/20 dark:text-purple-50 dark:border-purple-200/40 border-purple-200",
     },
     {
       icon: Calculator,
-      title: "Grade Calculator",
-      description: "Accurate UMS and grade boundary analysis",
+      title: "Performance Analytics",
+      description: "Track your progress and optimize your web applications",
       color:
         "bg-orange-50 text-orange-600 dark:bg-orange-600/20 dark:text-orange-50 dark:border-orange-200/40 border-orange-200",
     },
@@ -113,10 +113,10 @@ const About: React.FC = () => {
               </div>
             </div>
             <h1 className="text-4xl font-bold   bg-clip-text text-transparent">
-              Biology Unit-4 Study Hub
+              Quackly - Web Development Hub
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Your complete companion for mastering Edexcel IAL Biology Unit-4
+              Your ultimate companion for mastering web development - from frontend to backend and everything in between
             </p>
             <div className="flex justify-center gap-2 flex-wrap">
               <Badge variant="secondary" className="animate-bounce">
@@ -125,11 +125,11 @@ const About: React.FC = () => {
               </Badge>
               <Badge variant="secondary" className="animate-bounce">
                 <Award className="h-3 w-3 mr-1" />
-                Grade A* Focused
+                Industry Ready
               </Badge>
               <Badge variant="secondary" className="animate-bounce">
                 <Heart className="h-3 w-3 mr-1" />
-                Student Friendly
+                Developer Friendly
               </Badge>
             </div>
           </div>
@@ -142,16 +142,16 @@ const About: React.FC = () => {
               Intro
             </TabsTrigger>
             <TabsTrigger value="grade-a" className="text-xs">
-              Get A*
+              Get Pro
             </TabsTrigger>
             <TabsTrigger value="calculator" className="text-xs">
-              Grades
+              Analytics
             </TabsTrigger>
             <TabsTrigger value="about-site" className="text-xs">
               About
             </TabsTrigger>
             <TabsTrigger value="sitemap" className="text-xs">
-              Sitemap
+              Tools
             </TabsTrigger>
             <TabsTrigger value="tips" className="text-xs">
               Tips
@@ -169,14 +169,14 @@ const About: React.FC = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <BookOpen className="h-5 w-5 text-primary" />
-                  Introduction to Unit-4 Biology
+                  Introduction to Web Development
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Unit-4 Biology covers advanced concepts in metabolism,
-                  genetics, and ecology. This comprehensive study platform
-                  provides everything you need to excel in your exams.
+                  Web development encompasses frontend, backend, and full-stack development. 
+                  Quackly provides comprehensive tools and resources to help you master modern web technologies, 
+                  from HTML/CSS basics to advanced frameworks and deployment strategies.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -216,7 +216,7 @@ const About: React.FC = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Trophy className="h-5 w-5 text-yellow-500" />
-                  How to Get an A* in Biology Unit-4
+                  How to Become a Pro Developer
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -224,15 +224,15 @@ const About: React.FC = () => {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold flex items-center gap-2">
                       <Target className="h-5 w-5 text-blue-500" />
-                      Study Strategy
+                      Learning Strategy
                     </h3>
                     <ul className="space-y-2">
                       {[
-                        "Complete all syllabus objectives systematically",
-                        "Practice past papers under timed conditions",
-                        "Use active recall with flashcards",
-                        "Create mind maps for complex topics",
-                        "Form study groups for discussion",
+                        "Master the fundamentals: HTML, CSS, and JavaScript",
+                        "Build projects to apply your knowledge practically", 
+                        "Learn version control with Git and GitHub",
+                        "Practice with coding challenges daily",
+                        "Join developer communities for collaboration",
                       ].map((tip, index) => (
                         <li
                           key={index}
@@ -248,15 +248,15 @@ const About: React.FC = () => {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold flex items-center gap-2">
                       <Zap className="h-5 w-5 text-orange-500" />
-                      Exam Technique
+                      Career Skills
                     </h3>
                     <ul className="space-y-2">
                       {[
-                        "Read questions carefully and identify command words",
-                        "Use scientific terminology accurately",
-                        "Show your working in calculations",
-                        "Manage your time effectively",
-                        "Review answers before submitting",
+                        "Learn to read and write clean, maintainable code",
+                        "Understand debugging and testing methodologies",
+                        "Practice responsive design and accessibility",
+                        "Master deployment and DevOps basics",
+                        "Build a strong portfolio on GitHub",
                       ].map((tip, index) => (
                         <li
                           key={index}
@@ -276,9 +276,9 @@ const About: React.FC = () => {
                     Pro Tip
                   </h4>
                   <p className="text-yellow-300 text-sm">
-                    Aim for 80%+ consistently in practice papers. Use this
-                    platform's grade calculator to track your progress and
-                    identify areas for improvement.
+                    Focus on building real projects and contributing to open source. 
+                    Use Quackly's analytics tools to track your coding progress and 
+                    identify areas where you can level up your skills.
                   </p>
                 </div>
               </CardContent>
@@ -290,13 +290,13 @@ const About: React.FC = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Calculator className="h-5 w-5 text-blue-500" />
-                  Grade Calculation System
+                  Performance Analytics System
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-muted-foreground">
-                  Understanding how grades are calculated can help you set
-                  realistic targets and track progress.
+                  Understanding performance metrics helps you optimize your web applications 
+                  and track your learning progress as a developer.
                 </p>
 
                 <div className="space-y-4">
@@ -312,7 +312,7 @@ const About: React.FC = () => {
                       </div>
                       <div className="flex-1">
                         <div className="flex justify-between items-center mb-2">
-                          <span className="font-medium">Grade {grade}</span>
+                          <span className="font-medium">Level: {grade}</span>
                           <span className="text-sm text-muted-foreground">
                             {info.min}%+
                           </span>
@@ -325,19 +325,19 @@ const About: React.FC = () => {
 
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                   <h4 className="font-semibold text-blue-800 mb-2">
-                    UMS vs Raw Marks
+                    Performance vs Learning Progress
                   </h4>
                   <p className="text-blue-700 text-sm">
-                    Raw marks are converted to UMS (Uniform Mark Scale) which
-                    determines your final grade. Use our Grade Boundary tool for
-                    accurate calculations.
+                    Performance metrics track your application's speed and efficiency, 
+                    while learning progress shows your skill development. Use our analytics 
+                    tool for comprehensive tracking.
                   </p>
                 </div>
 
                 <Link to="/grade-boundary">
                   <Button className="w-full">
                     <Calculator className="h-4 w-4 mr-2" />
-                    Open Grade Calculator
+                    Open Performance Analytics
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
                 </Link>
@@ -350,15 +350,15 @@ const About: React.FC = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Info className="h-5 w-5 text-purple-500" />
-                  About This Study Platform
+                  About Quackly Platform
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  This comprehensive study platform was designed specifically
-                  for Edexcel IAL Biology Unit-4 students. It combines
-                  traditional study methods with modern technology to create an
-                  optimal learning experience.
+                  Quackly is a comprehensive web development platform designed to help 
+                  developers of all skill levels. It combines interactive learning tools 
+                  with practical coding challenges to create an optimal development 
+                  learning experience.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -366,10 +366,10 @@ const About: React.FC = () => {
                     <CardContent className="p-4 text-center">
                       <BookOpen className="h-8 w-8 mx-auto mb-2 text-blue-600" />
                       <h4 className="text-blue-700 dark:text-blue-300 font-semibold">
-                        Study Tools
+                        Dev Tools
                       </h4>
                       <p className="text-blue-700 dark:text-blue-300">
-                        Notes, flashcards, quizzes
+                        Code editors, debuggers, analyzers
                       </p>
                     </CardContent>
                   </Card>
@@ -377,9 +377,9 @@ const About: React.FC = () => {
                   <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
                     <CardContent className="p-4 text-center">
                       <Trophy className="h-8 w-8 mx-auto mb-2 text-green-600" />
-                      <h4 className="font-semibold text-green-800">Practice</h4>
+                      <h4 className="font-semibold text-green-800">Learning</h4>
                       <p className="text-sm text-green-600">
-                        Past papers, MCQs
+                        Challenges, tutorials
                       </p>
                     </CardContent>
                   </Card>
@@ -391,7 +391,7 @@ const About: React.FC = () => {
                         Progress
                       </h4>
                       <p className="text-sm text-purple-600">
-                        Tracking, analytics
+                        Analytics, portfolio
                       </p>
                     </CardContent>
                   </Card>
@@ -405,7 +405,7 @@ const About: React.FC = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Map className="h-5 w-5 text-green-500" />
-                  Site Navigation & Quick Links
+                  Developer Tools & Quick Links
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -433,23 +433,22 @@ const About: React.FC = () => {
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-muted-foreground">
                     <div>
-                      <strong>Dashboard:</strong> Central hub with progress
-                      overview
+                      <strong>Project Dashboard:</strong> Central hub for managing dev projects
                     </div>
                     <div>
-                      <strong>Notes:</strong> Interactive study materials
+                      <strong>Code Challenges:</strong> Practice coding with various difficulties
                     </div>
                     <div>
-                      <strong>Past Papers:</strong> Extensive exam practice
+                      <strong>Dev Notes:</strong> Documentation and code snippets
                     </div>
                     <div>
-                      <strong>Flashcards:</strong> Memory reinforcement tools
+                      <strong>Tech Flashcards:</strong> Quick review of concepts
                     </div>
                     <div>
-                      <strong>Planner:</strong> Study schedule management
+                      <strong>Project Planner:</strong> Plan and track development milestones
                     </div>
                     <div>
-                      <strong>Grade Calculator:</strong> Performance analysis
+                      <strong>Analytics:</strong> Monitor performance and progress
                     </div>
                   </div>
                 </div>
