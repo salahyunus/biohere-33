@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Settings, Clock, Calendar, Maximize2, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FullscreenCountdown } from "@/components/planner/FullScreenCountdown";
+import { FullscreenCountdown } from "@/components/planner/FullscreenCountdown";
 import { CountdownTimer } from "@/components/planner/CountdownTimer";
 import { SandTimer } from "@/components/planner/SandTimer";
 import { TimerSettings } from "@/components/planner/TimerSettings";
