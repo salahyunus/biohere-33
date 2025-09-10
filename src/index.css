@@ -83,6 +83,203 @@
     --primary: 48 96% 53%;
     --ring: 48 96% 53%;
   }
+
+  /* Special Themed Experiences */
+  .theme-hacker {
+    --background: 0 0% 0%;
+    --foreground: 120 100% 50%;
+    --card: 120 20% 10%;
+    --card-foreground: 120 100% 50%;
+    --card-hover: 120 30% 15%;
+    --popover: 120 20% 10%;
+    --popover-foreground: 120 100% 50%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 120 30% 15%;
+    --secondary-foreground: 120 100% 50%;
+    --muted: 120 30% 15%;
+    --muted-foreground: 120 70% 40%;
+    --accent: 120 30% 15%;
+    --accent-foreground: 120 100% 50%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120 50% 25%;
+    --input: 120 50% 25%;
+    --ring: 120 100% 50%;
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 120 100% 50%;
+    --sidebar-border: 120 50% 25%;
+    --navigation-hover: 120 30% 15%;
+    font-family: 'Courier New', monospace;
+  }
+
+  .theme-pirate-light {
+    --background: 30 30% 95%;
+    --foreground: 30 50% 10%;
+    --card: 30 30% 90%;
+    --card-foreground: 30 50% 10%;
+    --card-hover: 30 40% 85%;
+    --popover: 30 30% 90%;
+    --popover-foreground: 30 50% 10%;
+    --primary: 30 70% 40%;
+    --primary-foreground: 30 30% 95%;
+    --secondary: 30 20% 80%;
+    --secondary-foreground: 30 50% 10%;
+    --muted: 30 20% 80%;
+    --muted-foreground: 30 30% 40%;
+    --accent: 30 20% 80%;
+    --accent-foreground: 30 50% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 30% 75%;
+    --input: 30 30% 75%;
+    --ring: 30 70% 40%;
+    --sidebar-background: 30 35% 92%;
+    --sidebar-foreground: 30 50% 10%;
+    --sidebar-border: 30 30% 75%;
+    --navigation-hover: 30 40% 85%;
+    font-family: 'Rye', serif;
+  }
+
+  .theme-pirate-dark {
+    --background: 30 30% 5%;
+    --foreground: 30 70% 90%;
+    --card: 30 40% 10%;
+    --card-foreground: 30 70% 90%;
+    --card-hover: 30 50% 15%;
+    --popover: 30 40% 10%;
+    --popover-foreground: 30 70% 90%;
+    --primary: 30 70% 60%;
+    --primary-foreground: 30 30% 5%;
+    --secondary: 30 30% 20%;
+    --secondary-foreground: 30 70% 90%;
+    --muted: 30 30% 20%;
+    --muted-foreground: 30 50% 60%;
+    --accent: 30 30% 20%;
+    --accent-foreground: 30 70% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 40% 25%;
+    --input: 30 40% 25%;
+    --ring: 30 70% 60%;
+    --sidebar-background: 30 35% 8%;
+    --sidebar-foreground: 30 70% 90%;
+    --sidebar-border: 30 40% 25%;
+    --navigation-hover: 30 50% 15%;
+    font-family: 'Rye', serif;
+  }
+
+  .theme-duck-light {
+    --background: 60 100% 97%;
+    --foreground: 0 0% 10%;
+    --card: 60 100% 92%;
+    --card-foreground: 0 0% 10%;
+    --card-hover: 60 100% 87%;
+    --popover: 60 100% 92%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 60 100% 50%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 60 30% 85%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 60 30% 85%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 60 30% 85%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 60 60% 80%;
+    --input: 60 60% 80%;
+    --ring: 60 100% 50%;
+    --sidebar-background: 60 100% 95%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-border: 60 60% 80%;
+    --navigation-hover: 60 100% 87%;
+    font-family: 'Cabin Sketch', cursive;
+  }
+
+  .theme-duck-dark {
+    --background: 0 0% 5%;
+    --foreground: 60 100% 90%;
+    --card: 0 0% 10%;
+    --card-foreground: 60 100% 90%;
+    --card-hover: 0 0% 15%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 60 100% 90%;
+    --primary: 60 100% 70%;
+    --primary-foreground: 0 0% 5%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 60 100% 90%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 60 50% 60%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 60 100% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 60 100% 70%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 60 100% 90%;
+    --sidebar-border: 0 0% 25%;
+    --navigation-hover: 0 0% 15%;
+    font-family: 'Cabin Sketch', cursive;
+  }
+
+  .theme-handwritten-light {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 95%;
+    --card-foreground: 0 0% 10%;
+    --card-hover: 0 0% 90%;
+    --popover: 0 0% 95%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 220 100% 60%;
+    --sidebar-background: 0 0% 96%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 80%;
+    --navigation-hover: 0 0% 90%;
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .theme-handwritten-dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 90%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 90%;
+    --card-hover: 0 0% 18%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 220 100% 70%;
+    --primary-foreground: 0 0% 8%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 220 100% 70%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 25%;
+    --navigation-hover: 0 0% 18%;
+    font-family: 'Patrick Hand', cursive;
+  }
 }
 
 @layer base {
@@ -131,5 +328,57 @@
 
   .rotate-y-180 {
     transform: rotateY(180deg);
+  }
+
+  /* Typewriter Effect for Hacker Theme */
+  .typewriter {
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end), blink 1s infinite step-end;
+  }
+
+  .typewriter-cursor {
+    border-right: 2px solid;
+    animation: blink 1s infinite step-end;
+  }
+
+  /* Pirate Language Helper */
+  .pirate-text {
+    position: relative;
+  }
+
+  .pirate-text::after {
+    content: "🏴‍☠️";
+    margin-left: 0.5rem;
+    opacity: 0.7;
+  }
+
+  /* Duck Theme Quack Effect */
+  .duck-hover:hover::after {
+    content: "🦆";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 1.2em;
+    animation: fade-in 0.3s ease-out;
+  }
+
+  /* Handwritten Theme Sketch Effect */
+  .sketch-border {
+    position: relative;
+  }
+
+  .sketch-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, currentColor, transparent);
+    border-radius: inherit;
+    opacity: 0.1;
+    z-index: -1;
   }
 }

@@ -60,6 +60,12 @@ export default {
         },
         "navigation-hover": "hsl(var(--navigation-hover))",
       },
+      fontFamily: {
+        'pirate': ['Rye', 'serif'],
+        'duck': ['Cabin Sketch', 'cursive'],
+        'handwritten': ['Patrick Hand', 'cursive'],
+        'mono-hacker': ['Courier New', 'monospace'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -90,12 +96,22 @@ export default {
           "0%": { transform: "translateX(-10px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "typewriter": {
+          "from": { width: "0" },
+          "to": { width: "100%" }
+        },
+        "blink": {
+          "0%, 50%": { opacity: "1" },
+          "51%, 100%": { opacity: "0" }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
         "slide-in": "slide-in 0.3s ease-out",
+        "typewriter": "typewriter 2s steps(40, end)",
+        "blink": "blink 1s infinite",
       },
     },
   },
